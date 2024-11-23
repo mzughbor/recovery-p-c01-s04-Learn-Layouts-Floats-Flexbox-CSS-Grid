@@ -265,3 +265,28 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* Floats */
+
+.author-img {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.author {
+  float:left;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
