@@ -26,7 +26,7 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -35,9 +35,9 @@ nav {
   /* text-align: center; */
 }
 
-article {
+/* article {
   margin-bottom: 60px;
-}
+} */
 
 .post-header {
   margin-bottom: 40px;
@@ -136,10 +136,6 @@ li:last-child {
   list-style: none;
 }
 
-body {
-  /* background-color: orangered; */
-}
-
 /* .first-li {
   font-weight: bold;
 } */
@@ -150,10 +146,6 @@ li:first-child {
 
 li:last-child {
   font-style: italic;
-}
-
-li:nth-child(even) {
-  /* color: red; */
 }
 
 /* Misconception: this won't work! */
@@ -218,10 +210,6 @@ button {
 h1::first-letter {
   font-style: normal;
   margin-right: 5px;
-}
-
-h3 + p::first-line {
-  /* color: red; */
 }
 
 h2 {
@@ -299,7 +287,8 @@ nav p {
   margin-bottom: 5px;
   display: block;
 }
-
+/* Flex layout ?? */
+/*
 .row {
   display: flex;
   gap: 75px;
@@ -316,6 +305,26 @@ article {
   margin-bottom: 0;
 }
 
+*/
+
 aside h4 {
   margin-bottom: 55px;
+}
+
+/* grid layout */
+
+.container {
+  display: grid;
+  grid-template-columns: auto 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+footer {
+  grid-column: 1/-1;
 }
